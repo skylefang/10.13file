@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="myjquery.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            float: left;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">1</div>
+<div class="box">2</div>
+<div class="这是div"></div>
+<div class="这是div"></div>
+<a href="">百度</a>
+<a href="">百度</a>
+
+<script>
+//    aa(function(){
+//
+//    })
+   /* let obj = new  aa('div');
+    obj.css({background:'green',width:'100px',height:'100px','border-radius':'5px'})
+    obj.html('<p>这是p标签</p>')*/
+
+   /* // 页面加载事件
+    let obj1 = new  aa (fn);
+    // 加载事件实现的功能
+    function fn() {
+        // 获取元素 当做属性
+       let element =  new aa ('div');
+       element.html('这是div');  //  没有返回值，为undefined，如果用链式调用的形式下一个就是undefined.css会
+       报错，所以在方法中加一个return this;返回this
+       // 添加点击事件
+       element.click(function(){
+           alert(1);
+       })
+    }*/
+
+
+    /*let obj1 = new  aa (fn);   //  传函数 表示加载
+    function fn(){
+        let element =  new aa ('div');
+        let str = element.html('这是一个div').css({background:'pink',height:'500px'});
+        element.click(function(){*/
+            /*this.style.background = 'blue';  //
+            this.css();  // 不可以使用
+            $(this).css();  // 但这种方法可以使用，
+            前提是对$打包后才可以使用，所以此时只能使用原生的方法来修改它的样式*/
+            // 与正则没有关系
+           /* let obj = new aa(this);
+            obj.css({background:'blue',width:'100px',height:'100px'}).html('box')
+        })
+    }*/
+  /* let obj1 = new  aa (fn);
+   function fn(){
+       // 利用正则来匹配
+      let obj = new aa ('<div>');
+      obj.appendTo('.box').html('这是创建的div').css({width:'60px',height:'60px',
+      background:'#eeeeee'})
+
+}*/
+/*let obj1 = new  aa (fn);
+function fn() {
+    (new aa('a')).attr('href','http://www.baidu.com');*/
+//    (new aa('img')).attr('src','img/1.png')
+    // 一个值就是设置  图片
+    /*(new aa('img')).attr('src','img/1.png');
+   alert((new aa('img')).attr('src')) ;*/
+/*}*/
+$(function(){
+   $('div').html('this is div');
+   let arr = [];
+   $.isArray(arr)
+})
+</script>
+</body>
+</html>
